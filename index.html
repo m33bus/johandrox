@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>johandrox</title>
+  <meta name="description" content="3D bust site scaffold" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="site-body">
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo-link" href="./index.html" aria-label="Homepage">
+      <img src="./assets/logo.png" alt="johandrox logo" class="site-logo" />
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="./index.html">home</a>
+      <a href="./shop.html">shop</a>
+      <a href="./contact.html">contact</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="hero" aria-label="3D bust">
+      <div id="scene-wrap">
+        <canvas id="scene"></canvas>
+        <div class="bottom-occluder" aria-hidden="true"></div>
+        <div id="loading">loading bust…</div>
+        <div id="fallback" hidden>
+          add <code>/assets/bust.glb</code> to show the model
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
